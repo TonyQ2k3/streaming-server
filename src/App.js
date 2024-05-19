@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import videojs from 'video.js';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
-function App() {
+// This imports the functional component from the previous sample.
+import VideoJS from './components/VideoJS'
+import NavBar from './components/NavBar';
+
+// Import pages
+import VodPlayer from './pages/VodPlayer';
+import VodMain from './pages/VodMain';
+
+const App = () => {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+      <Switch>
+        <Route exact path="/vod">
+          <VodMain />
+        </Route>
+        <Route exact path="/vod/:id">
+          <VodPlayer />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
