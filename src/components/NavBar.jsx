@@ -12,7 +12,7 @@ function NavBar() {
           <a href="/vod">
             <p>VOD</p>
           </a>
-          <a href="#">
+          <a href="/livestream">
             <p>Livestream</p>
           </a>
           <a href="#">

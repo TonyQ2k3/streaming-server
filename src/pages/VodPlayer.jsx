@@ -41,7 +41,7 @@ function VodPlayer() {
     });
   };
   return (
-    <div>
+    <div className='w-[711px] mx-auto'>
         <div className='videoWrapper'>
             <VideoJS source={vodServer + id +'.m3u8'} onReady={handlePlayerReady} />            
         </div>
@@ -50,6 +50,7 @@ function VodPlayer() {
             title.length <= 50 ? title : title.substring(0, 50) + '...'
           }
         </h3>
+        <h3 className='text-lg'>{username}</h3>
     </div>
   )
 }

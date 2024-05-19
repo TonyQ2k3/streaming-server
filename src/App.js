@@ -14,6 +14,7 @@ import NavBar from './components/NavBar';
 // Import pages
 import VodPlayer from './pages/VodPlayer';
 import VodMain from './pages/VodMain';
+import Livestream from './pages/Livestream';
 
 const App = () => {
 
@@ -27,6 +28,9 @@ const App = () => {
         </Route>
         <Route exact path="/vod/:id">
           <VodPlayer />
+        </Route>
+        <Route exact path="/livestream">
+          <Livestream />
         </Route>
       </Switch>
     </Router>
