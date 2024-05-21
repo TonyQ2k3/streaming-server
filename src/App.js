@@ -15,6 +15,7 @@ import NavBar from './components/NavBar';
 import VodPlayer from './pages/VodPlayer';
 import VodMain from './pages/VodMain';
 import Livestream from './pages/Livestream';
+import Restream from './pages/Restream';
 
 const App = () => {
 
@@ -31,6 +32,9 @@ const App = () => {
         </Route>
         <Route exact path="/livestream">
           <Livestream />
+        </Route>
+        <Route exact path="/restream">
+          <Restream />
         </Route>
       </Switch>
     </Router>

@@ -15,7 +15,7 @@ function NavBar() {
           <a href="/livestream">
             <p>Livestream</p>
           </a>
-          <a href="#">
+          <a href="/restream">
             <p>Restream</p>
           </a>
           <a href="#">
