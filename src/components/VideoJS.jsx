@@ -5,7 +5,7 @@ import 'video.js/dist/video-js.css';
 export const VideoJS = (props) => {
   const videoRef = React.useRef(null);
   const playerRef = React.useRef(null);
-  const {source, onReady} = props;
+  const {mode, source, onReady} = props;
 
   const options = {
     autoplay: true,
@@ -18,7 +18,7 @@ export const VideoJS = (props) => {
     aspectRatio: "16:9",
     sources: [{
       src: source,
-      type: 'application/x-mpegURL'
+      type: mode == 'mp4' ? 'video/mp4' : 'application/x-mpegURL'
     }]
   };
 

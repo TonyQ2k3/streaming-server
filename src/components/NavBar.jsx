@@ -16,10 +16,10 @@ function NavBar() {
             <p>Livestream</p>
           </a>
           <a href="/restream">
-            <p>Restream</p>
+            <p>Records</p>
           </a>
-          <a href="#">
-            <p>Credits</p>
+          <a href="/stats">
+            <p>Stats</p>
           </a>
         </div>
     </nav>
