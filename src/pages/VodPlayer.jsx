@@ -7,7 +7,7 @@ function VodPlayer() {
   const params = useParams();
   const id = params.id;
   const playerRef = React.useRef(null);
-  const vodServer = 'http://192.168.56.103/hls/';
+  const vodServer = 'http://192.168.56.103/vod/';
   let title, username;
   switch (id) {
     case 'fallout':

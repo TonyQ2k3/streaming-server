@@ -6,8 +6,9 @@ import { useParams, useHistory } from 'react-router-dom';
 function Record() {
   const params = useParams();
   let videos = [
-    'stream_360-1716606174',
-    'stream-1716566947'
+    'stream-1716801182',
+    'stream-1716803057',
+    'stream-1716801248'
   ];
   const playerRef = React.useRef(null);
   const vodServer = 'http://192.168.56.103/hls/live/';

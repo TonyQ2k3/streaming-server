@@ -9,7 +9,6 @@ function Livestream() {
     const playerRef = React.useRef(null);
     const [vodServer, setVodServer] = useState('http://192.168.56.103/hls/live/stream/index.m3u8');
     let title = "Tony Nguyen's livestream";
-    let username = 'Tony Nguyen';
 
 
     const handlePlayerReady = (player) => {
