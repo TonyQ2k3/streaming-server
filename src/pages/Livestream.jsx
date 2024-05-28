@@ -26,6 +26,7 @@ function Livestream() {
 
     return (
         <div className='w-[711px] mx-auto'>
+            <h3>New text added!</h3>
             <div className='videoWrapper'>
                 <VideoJS source={vodServer} onReady={handlePlayerReady} />            
             </div>
