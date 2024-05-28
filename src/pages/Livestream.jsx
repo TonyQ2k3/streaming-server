@@ -50,11 +50,6 @@ function Livestream() {
             }}>
                 MEDIUM
             </button>
-            <button className='btn btn-primary p-2 border-2' onClick={() => {
-                setVodServer('http://192.168.56.103/hls/live/stream/index.m3u8')
-            }}>
-                HIGH
-            </button>
         </div>
     )
 }
