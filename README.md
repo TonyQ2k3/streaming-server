@@ -22,7 +22,7 @@ This is a Video Sharing Application built using Spring Boot, React, and MongoDB.
 ## Installation
     - Clone Repository
     ```bash
-    git clone https://github.com/Video-Sharing-Project-UIT/Video-Sharing-Frontend.git
+    git clone https://github.com/TonyQ2k3/streaming-server.git
     ```
     - Navigate to the frontend directory:
     ```bash
